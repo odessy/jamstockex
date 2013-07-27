@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	 <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="stock.js"></script>
+	</head>
+	<style>
+		#stocktable{
+			border: 1px solid #DFDFDF;
+			width: 100%;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			font-family: Arial,"Bitstream Vera Sans",Helvetica,Verdana,sans-serif;
+			color: #333;
+		}
+		#stocktable td, #stocktable th {
+			border-top-color: white;
+			border-bottom: 1px solid #DFDFDF;
+			color: #555;
+			padding:5px;
+		}
+		#stocktable thead {
+			padding: .2em 0 .2em .5em;
+			text-align: left;
+			color: #4B4B4B;
+			background-color: #C8C8C8;
+			border-bottom: solid 1px #999;
+		}
+		#stocktable th {
+			font-weight: normal;
+			padding: 7px 7px 8px;
+			text-align: left;
+			line-height: 1.3em;
+		}
+		#stocktable tr:nth-child(even) {
+			background: #F2F2F2;
+		}
+		
+		.sumary {
+			background-color: #EEEEEE;
+			display: inline-block;
+			font-size: 0.93em;
+			font-weight: bold;
+		}
+		
+		.sumary div {
+			float: left;
+			margin-right: 5px;
+			padding: 5px;
+		}
+	</style>
+
+<body>
+	<div>
+		<div class="sumary"></div>
+		<table id="stocktable" width="100%" cellspacing="0" cellpadding="0" >
+		<thead>
+			<th>Indices</th>
+			<th>Volume</th>
+			<th>Value</th>
+			<th></th>
+			<th>Changes</th>
+		</thead>
+		<tbody class="stock">
+		</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
